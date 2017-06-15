@@ -187,7 +187,7 @@ def get_namespace(tag):
         raise ValueError("%s not recognized as MediaWiki dump namespace"
                          % namespace)
     return namespace
-_get_namespace = get_namespace
+_get_namespace = get_namespace  # noqa: E305
 
 
 def extract_pages(f, filter_namespaces=False):
@@ -233,7 +233,7 @@ def extract_pages(f, filter_namespaces=False):
             # ./revision/text element. The pages comprise the bulk of the
             # file, so in practice we prune away enough.
             elem.clear()
-_extract_pages = extract_pages  # for backward compatibility
+_extract_pages = extract_pages  # for backward compatibility # noqa: E305
 
 
 def process_article(args):

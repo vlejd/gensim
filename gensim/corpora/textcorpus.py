@@ -33,7 +33,6 @@ import logging
 import random
 
 from gensim import interfaces, utils
-from six import string_types
 from gensim.corpora.dictionary import Dictionary
 
 logger = logging.getLogger('gensim.corpora.textcorpus')

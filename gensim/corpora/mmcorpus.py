@@ -12,7 +12,7 @@ Corpus in the Matrix Market format.
 
 import logging
 
-from gensim import interfaces, matutils
+from gensim import matutils
 from gensim.corpora import IndexedCorpus
 
 
